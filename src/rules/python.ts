@@ -110,7 +110,10 @@ module.exports = [
       ],
       consequent: [
         '${1:value}*${2:value2} -'
-      ]
+      ],
+      description: 'operators with different priorities',
+      severity: 'I',
+      author: 'PEP 8 -- Style Guide for Python Code'
     },
     {
       condition: [
@@ -118,7 +121,10 @@ module.exports = [
       ],
       consequent: [
         '${1:value}*${2:value2} +'
-      ]
+      ],
+      description: 'operators with different priorities',
+      severity: 'I',
+      author: 'PEP 8 -- Style Guide for Python Code'
     },
     {
       condition: [
