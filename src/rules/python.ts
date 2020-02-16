@@ -12,10 +12,10 @@ module.exports = [
     },
     {
       condition: [
-        'if ${1:value} % ${2:value} != 0:'
+        'if ${1:value} != 0:'
       ],
       consequent: [
-        'if ${1:value} % ${2:value}:'
+        'if ${1:value}:'
       ],
       description: 'It can not cover when value is null',
       severity: 'I',
@@ -23,10 +23,10 @@ module.exports = [
     },
     {
       condition: [
-        'if ${1:value} % ${2:value} == 0:'
+        'if ${1:value} == 0:'
       ],
       consequent: [
-        'if not ${1:value} % ${2:value}:'
+        'if not ${1:value}:'
       ]
     },
     {
